@@ -7,20 +7,10 @@
 
 <script>
 import IndexView from './components/index'
-import store from './vuex/store'
-console.log(store.state.page)
-// import Vuex from 'vuex'
-// global.vuex = Vuex
 export default {
-  store,
   name: 'app',
   components: {
     IndexView
-  },
-  data () {
-    return {
-      page: store.state.page
-    }
   }
 }
 </script>

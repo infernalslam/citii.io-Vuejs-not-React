@@ -46,15 +46,10 @@
 </template>
 
 <script>
-import store from '../vuex/store.js'
+// import store from '../vuex/store.js'
 export default {
   name: 'index',
-  components: {},
-  methods: {
-    addPage (page) {
-      store.commit('addPage', page)
-    }
-  }
+  components: {}
 }
 </script>
 

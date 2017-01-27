@@ -4,26 +4,25 @@ Vue.use(Vuex)
 var dataCostOfLive = require('./cost_of_living_indices.json')
 
 const state = {
-  costOflive: dataCostOfLive,
-  page: 1
+  costOflive: dataCostOfLive
 }
 /* mutations */
 const mutations = {
-  addPage: (state, page) => {
-    state.page = page
-  }
+  // addPage: (state, page) => {
+  //   state.page = page
+  // }
 }
 
 /* getters */
 const getters = {
-  page: state => state.page
+  // page: state => state.page
 }
 
 /* actions */
 const actions = {
-  addPage: (state, page) => {
-    store.commit('addPage', page)
-  }
+  // addPage: (state, page) => {
+  //   store.commit('addPage', page)
+  // }
 }
 
 let store = new Vuex.Store({
