@@ -12,7 +12,8 @@
             <div style="width: 100%; text-align: center;">
               <button class="de">
                 Details</button>
-                <button class="continue-button">Start</button>
+                <!-- <button class="continue-button">Start</button> -->
+                <router-link to="/costOflive"><button class="continue-button">Start</button></router-link>
             </div>
           </div>
           <div class="footer">
@@ -45,9 +46,15 @@
 </template>
 
 <script>
+import store from '../vuex/store.js'
 export default {
   name: 'index',
-  components: {}
+  components: {},
+  methods: {
+    addPage (page) {
+      store.commit('addPage', page)
+    }
+  }
 }
 </script>
 
