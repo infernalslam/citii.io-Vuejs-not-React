@@ -21,25 +21,26 @@ for (var key in dataCostOfLive) {
 }
 
 const state = {
-  costOflive: dataCovertdataCostOfLive
+  costOflive: dataCovertdataCostOfLive,
+  page2costOflive: ''
 }
 /* mutations */
 const mutations = {
-  // addPage: (state, page) => {
-  //   state.page = page
-  // }
+  addpage2costOflive: (state, text) => {
+    state.page2costOflive = text
+  }
 }
 
 /* getters */
 const getters = {
-  // page: state => state.page
+  addpage2costOflive: state => state.page2costOflive
 }
 
 /* actions */
 const actions = {
-  // addPage: (state, page) => {
-  //   store.commit('addPage', page)
-  // }
+  addpage2costOflive: (state, text) => {
+    store.commit('addpage2costOflive', text)
+  }
 }
 
 let store = new Vuex.Store({

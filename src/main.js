@@ -11,10 +11,12 @@ global.vuex = Vuex
 
 import Page1 from './components/index'
 import Page2 from './components/page2'
+import Page3 from './components/page3'
 
 const routes = [
   { path: '/', component: Page1 },
-  { path: '/costOflive', component: Page2 }
+  { path: '/costOflive', component: Page2 },
+  { path: '/salary', component: Page3 }
 ]
 const router = new VueRouter({ routes })
 

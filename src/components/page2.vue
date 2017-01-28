@@ -12,7 +12,7 @@
           <p class="text-city">{{item.text}}</p>
 
           <div :style="{ display: dis }">
-            <i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i>
+            <router-link to="/salary"><i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i></router-link>
           </div>
 
         </div>
@@ -24,6 +24,8 @@
 <script>
 import { BasicSelect } from 'vue-search-select'
 import store from '../vuex/store.js'
+import Vuex from 'vuex'
+global.vuex = Vuex
 export default {
   name: 'page2',
   data () {
@@ -51,6 +53,7 @@ export default {
       if (this.item.value && this.item.text) {
         this.dis = 'inline-block'
         console.log('มีค่า')
+        store.commit('addpage2costOflive', this.item)
       } else {
         this.dis = 'none'
         console.log('ไม่มีค่า')
