@@ -9,15 +9,20 @@
           <p class="font-title">What's your current annual salary?</p>
           <div style="text-align: center;">
             <select class="select-title">
-              <option>THB</option></select>
+              <option>{{ store.state.page2costOflive.currency_type }}</option></select>
             </select>
 
-            <input type="number" class="class-input">
+            <input type="number" class="class-input" v-model="money">
           </div>
 
-          <!-- <div :style="{ display: dis }">
-            <router-link to="/salary"><i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i></router-link>
-          </div> -->
+          <p class="font-title">Result: {{ store.state.page2costOflive.currency_type }}</p>
+
+          <!-- <div :style="{ display: dis }"> -->
+          <div>
+            <router-link to="/costOflive"><i class="fa fa-arrow-left arrow-button" aria-hidden="true"></i></router-link>
+            <router-link to="/salary" :style="{ display: (money) ? 'inline-block': 'none' }"><i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i></router-link>
+          </div>
+          <!-- </div> -->
 
         </div>
       </div>
@@ -26,11 +31,27 @@
 </template>
 
 <script>
+import store from '../vuex/store.js'
 export default {
+  name: 'page3',
+  data () {
+    return {
+      store,
+      money: 0,
+      dis: 'none'
+    }
+  }
 }
 </script>
 
 <style lang="css">
+
+.font-title {
+color: rgb(255, 255, 255);
+font-family: Nunito, sans-serif;
+font-size: 50px;
+text-align: center;
+}
 .select-title {
   width: 75px;
   padding-left: 1em;
