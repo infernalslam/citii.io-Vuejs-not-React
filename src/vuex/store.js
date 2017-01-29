@@ -22,24 +22,32 @@ for (var key in dataCostOfLive) {
 
 const state = {
   costOflive: dataCovertdataCostOfLive,
-  page2costOflive: ''
+  page2costOflive: '',
+  wishlive: ''
 }
 /* mutations */
 const mutations = {
   addpage2costOflive: (state, text) => {
     state.page2costOflive = text
+  },
+  addpage4wishlive: (state, text) => {
+    state.wishlive = text
   }
 }
 
 /* getters */
 const getters = {
-  addpage2costOflive: state => state.page2costOflive
+  addpage2costOflive: state => state.page2costOflive,
+  addpage4wishlive: state => state.wishlive
 }
 
 /* actions */
 const actions = {
   addpage2costOflive: (state, text) => {
     store.commit('addpage2costOflive', text)
+  },
+  addpage4wishlive: (state, text) => {
+    store.commit('addpage4wishlive', text)
   }
 }
 

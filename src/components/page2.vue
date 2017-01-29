@@ -24,8 +24,8 @@
 <script>
 import { BasicSelect } from 'vue-search-select'
 import store from '../vuex/store.js'
-import Vuex from 'vuex'
-global.vuex = Vuex
+// import Vuex from 'vuex'
+// global.vuex = Vuex
 export default {
   name: 'page2',
   data () {

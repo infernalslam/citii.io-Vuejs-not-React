@@ -20,7 +20,7 @@
           <!-- <div :style="{ display: dis }"> -->
           <div>
             <router-link to="/costOflive"><i class="fa fa-arrow-left arrow-button" aria-hidden="true"></i></router-link>
-            <router-link to="/salary" :style="{ display: (money) ? 'inline-block': 'none' }"><i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i></router-link>
+            <router-link to="/wish" :style="{ display: (money) ? 'inline-block': 'none' }"><i class="fa fa-arrow-right arrow-button" aria-hidden="true"></i></router-link>
           </div>
           <!-- </div> -->
 
