@@ -9,13 +9,14 @@
           <p class="font-title">What's your current annual salary?</p>
           <div style="text-align: center;">
             <select class="select-title">
-              <option>{{ store.state.page2costOflive.currency_type }}</option></select>
+              <option>{{ store.state.live.currency_type }}</option></select>
             </select>
 
             <input type="number" class="class-input" v-model="money">
           </div>
 
-          <p class="font-title">Result: {{ store.state.page2costOflive.currency_type }}</p>
+          <!-- <p class="font-title"> {{ money }} </p> -->
+          <p class="font-title">Result: {{ store.state.live.currency_type }} {{ money }}</p>
 
           <!-- <div :style="{ display: dis }"> -->
           <div>

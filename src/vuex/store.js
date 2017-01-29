@@ -22,13 +22,13 @@ for (var key in dataCostOfLive) {
 
 const state = {
   costOflive: dataCovertdataCostOfLive,
-  page2costOflive: '',
+  live: '',
   wishlive: ''
 }
 /* mutations */
 const mutations = {
   addpage2costOflive: (state, text) => {
-    state.page2costOflive = text
+    state.live = text
   },
   addpage4wishlive: (state, text) => {
     state.wishlive = text
@@ -37,7 +37,7 @@ const mutations = {
 
 /* getters */
 const getters = {
-  addpage2costOflive: state => state.page2costOflive,
+  addpage2costOflive: state => state.live,
   addpage4wishlive: state => state.wishlive
 }
 
